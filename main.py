@@ -33,6 +33,18 @@ import shlex
 
 # print('hi' * 5) - дублирует
 
-someString = 'hello world'
-print(someString[0])
-print(someString[-1])
+# someString = 'hello world'
+# print(someString[0])
+# print(someString[-1])
+
+# someString = 'Today nice day'
+# start = 10
+# end = 6
+# step = -1
+#
+# print(someString[start:end:step])
+
+# someString = input('Введите слово\n')
+# symbol = input()
+# result = someString[:-1] +symbol
+# print(result)
