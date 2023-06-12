@@ -48,3 +48,71 @@ import shlex
 # symbol = input()
 # result = someString[:-1] +symbol
 # print(result)
+################################################################
+      #              СПИСКИ
+
+# numbers = [3, 5, 4, 5, 6, 64, 'ergwegr']
+# numbers1 = [1, 2, 3]
+# result = numbers1 + numbers
+# print(result)
+# lenList = len(numbers)
+# print(lenList)
+
+#1.13
+# someList = [37, 0, 50, 46, 34, 46, 0, 13]
+# index = int(input('Введите индекс элемента: '))
+#
+# if index > len(someList):
+#     print('индекс выходит за пределы списка')
+# else:
+#     print(someList[index])
+
+
+# для вывода с конца списка
+# someList = [37, 0, 50, 46, 34, 46, 0, 13]
+# print(someList[::-1])
+
+# индекс умножить на 2
+# someList = [37, 0, 50, 46, 34, 46, 0, 13]
+#
+# index = 0
+#
+# while index < len(someList):
+#     someList[index] *= 2
+#     index += 1
+#
+# print(someList)
+
+
+#11.17(в)
+
+# someList = [37, 0, 50, 46, 34, 46, 0, 13]
+#
+# index = 0
+# firstNumber = someList[0]
+#
+# while index < len(someList):
+#     someList[index] /= firstNumber
+#     index += 1
+#
+# print(someList)
+
+
+#11.19(a) найти сумму и среднее значение
+# someList = [37, 0, 50, 46, 34, 46, 0, 13]
+#
+# sumNumbers = sum(someList)
+# sumNumbers1 = sum(someList) / len(someList)
+# print(sumNumbers)
+# print(sumNumbers1)
+
+
+# максимальное и минимальное значение
+
+# someList = [37, 0, 50, 46, 34, 46, 0, 13]
+
+# minNumber = min(someList)
+# maxNumber = max(someList)
+#
+# print(minNumber)
+# print(maxNumber)
