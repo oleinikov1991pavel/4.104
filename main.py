@@ -8,6 +8,7 @@
 #         cntSymbol += 1
 #     index += 1
 # print(f'Колличество символов "o" в строке: {cntSymbol}')
+import random
 import shlex
 
 #9.76(b)
@@ -236,10 +237,112 @@ import shlex
 
 #11.209
 
-someList = [1, 2, 3, 5, 2, 5, 4, 7]
-isTrue = True
-for index in range(len(someList)):
-    if someList[index] < someList[index -1]:
-        isTrue = False
-        break
-    print(index)
+# someList = [1, 2, 3, 5, 2, 5, 4, 7]
+# isTrue = True
+# for index in range(len(someList)):
+#     if someList[index] < someList[index -1]:
+#         isTrue = False
+#         break
+#     print(index)
+
+
+#######################26.06.2023#############################
+                # Модульное программирование
+
+# import functions
+#
+# number1 = 5
+# number2 = 10
+# result = functions.count_summ_number(number1, number2)
+# print(result)
+
+# matrix1 = [
+#     [1, 2, 3],
+#     [4, 5, 6],
+#     [7, 8, 9]
+# ]
+#
+# print(matrix1[-1][0])
+
+# lenList = 5
+# someList = [''] *lenList
+# print(someList)
+#
+# for index in list(range(lenList)):
+#     someList[index] = input()
+#
+# print(someList)
+
+# import random
+#
+# lenX = 2
+# lenY = 3
+# matrix = [[]] * lenX
+#
+# for i in range(lenX):
+#     matrix[i] = [0] * lenY
+#     for j in range(lenY):
+#         matrix[i][j] = random.randint(1, 9)
+#
+# for i in range(lenX):
+#     print(matrix[i])
+########## ДВУМЕРНЫЙ МАССИВ #############
+#12.4b
+# import random
+#
+# lenX = int(input('Enter'))
+# lenY = int(input('Enter'))
+#
+# matrix = [[]] * lenX
+# for i in range(lenX):
+#     matrix[i] = [0] * lenY
+#
+# for j in range(lenY):
+#     matrix[j] = [0] * lenX
+#     print(matrix[j])
+# print()
+# print()
+# print()
+#
+# for i in range(lenX):
+#     for j in range(lenY):
+#         matrix[i][j] = random.randint(10, 99)
+# for i in range(lenX):
+#     print(matrix[i])
+#
+# numberX = int(input())
+# numberY = int(input())
+#
+# print(matrix[numberX][numberY])
+
+#12.35a
+
+import random
+
+lenX = int(input('Enter'))
+lenY = int(input('Enter'))
+
+matrix = [[]] * lenX
+for i in range(lenX):
+    matrix[i] = [0] * lenY
+
+for j in range(lenY):
+    matrix[j] = [0] * lenX
+    print(matrix[j])
+print()
+print()
+print()
+
+for i in range(lenX):
+    for j in range(lenY):
+        matrix[i][j] = random.randint(10, 99)
+for i in range(lenX):
+    print(matrix[i])
+
+summa = 0
+cnt = 0
+for i in range(lenY):
+   if matrix[5][i] % 2 != 0:
+       cnt += 1
+       summa += matrix[5][i]
+       print(summa)
