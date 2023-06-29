@@ -149,6 +149,158 @@ import shlex
 # for word in someList:
 #     print(word)
 
+#1 Явлется ли число палиндропом
+#
+# number1 = int(input('Первое число\n'))
+# number2 = int(input('Второе число\n'))
+#
+# def f(number1):
+#     number1 = str(number1)
+#     return number1 == number2[::-1]
+
+# text = input()
+# def is_balanced(text):
+#     text = "".join(el for el in text if el in "〈({[]})〉")
+#
+#     while text:
+#         flag = True
+#         for el in "〈〉", "()", "{}", "[]":
+#             if el in text:
+#                 text = text.replace(el, "")
+#                 flag = False
+#         if flag:
+#             return False
+#     return True
+# print(text)
+
+
+# s = list(input())
+# st = []
+# for i in range(len(s)):
+#     if s[i] == '(' or s[i] == '{' or s[i] == '[':
+#         st.append(s[i])
+#         continue
+#     if (s[i] == ')' or s[i] == '}' or s[i] == ']') and st:
+#         if (st[-1]+s[i] == '()') or (st[-1]+s[i] == '{}') or (st[-1]+s[i] == '[]'):
+#             st.pop()
+#         else:
+#             print('нет')
+#             exit()
+#     else:
+#         print('нет')
+#         exit()
+# if st == []:
+#     print('да')
+# else:
+#     print('нет')
+
+
+# someString = 'Hello World from Belajar Python'
+# someList = someString.split('')
+
+# someString = '(())(())((((()))()))())'
+#
+# cntOne = someString.count('(')
+# cntTwo = someString.count(')')
+#
+# print(cntOne == cntTwo)
+
+
+####### Задача про колличество скобок в строке
+# someString = '(())(())((((()))()))())'
+# cnt = 0
+# isTrue = True
+#
+# for char in someString:
+#     if char == '(':
+#         cnt += 1
+#     elif char == ')':
+#         cnt -= 1
+#
+# if cnt != 0:
+#     isTrue = False
+#
+#     print(isTrue)
+
+
+########################################ЗАДАЧИ#####################################################
+#ГСЧ Генератор случайных чисел
+#
+# import random
+#
+# number = random.randint(1, 10)
+# print(number)
+
+# 11.29b
+
+import random
+
+# someList = []
+# lenList = 8
+#
+# for i in range(lenList):
+#     result = someList.append(i ** 2)
+#     summ = sum(resulte)
+#     if result > 9999:
+#         print(summ)
+
+
+# number = 1011121314151617181920212223242526272829303132333435363738394041424344454647484950
+#
+# k = 15
+
+#2.43
+
+
+# a = int(input('Первое число\n'))
+# b = int(input('Второе число\n'))
+#
+# if (a % b or b % a) == 0:
+#     print('1')
+# else:
+#     print(a % b or b % a)
+
+
+# a = int(input())
+# b = int(input())
+#
+# num1 = a % b
+# num2 = b % a
+# print((num1 * num2) +1)
+
+
+#5.62
+
+# s = 0
+# for i, x in enumerate(class_1, 1):
+#     s += x
+# print(s / i)
+#
+# s = 0
+# for i, x in enumerate(class_2, 1):
+#     s += x
+# print(s / i)
+
+#17.7
+
+# list = [12, 15, 13, 17, 18, 19, 35, 36, 58, 45, 47, 88]
+# list2 = len(list)
+#
+# t = []
+# for i in range(list2):
+#     t.append(list)
+# print(sorted(t)[4])
+
+#6.97
+
+# list = [12, 15, 13, 17, 18, 19, 35, 36, 58, 45, 47, 88, 11, 34, 39, 21, 29, 49, 38, 63]
+# list2 = len(list)
+#
+# t = []
+# for i in range(len(list)):
+#     t.append(list)
+# print(sorted(list)[2])
+
 
 # someString = 'Hello World from mainpy file'
 # someList = someString.split()
@@ -346,3 +498,4 @@ for i in range(lenY):
        cnt += 1
        summa += matrix[5][i]
        print(summa)
+
